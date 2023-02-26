@@ -110,4 +110,9 @@ function drawStarryNight() {
     context.beginPath();
     context.rect(50, 50, 300, 300);
     context.stroke();
+
+    context.textAlign = "center";
+    context.font = "normal 30pt Arial";
+    context.fillText("STARRY NIGHT", 200, 390);
+
 }
