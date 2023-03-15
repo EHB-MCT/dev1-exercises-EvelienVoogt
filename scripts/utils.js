@@ -26,3 +26,7 @@ export function strokeCircle(x, y, r) {
     context.arc(x, y, r, 0, Math.PI * 2);
     context.stroke();
 }
+
+export function rgb(r, g, b) {
+    context.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+}
