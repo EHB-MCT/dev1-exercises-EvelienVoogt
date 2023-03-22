@@ -28,5 +28,5 @@ export function strokeCircle(x, y, r) {
 }
 
 export function rgb(r, g, b) {
-    context.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+    return "rgb(" + r + "," + g + "," + b + ")";
 }
