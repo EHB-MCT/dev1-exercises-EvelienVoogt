@@ -30,3 +30,10 @@ export function strokeCircle(x, y, r) {
 export function rgb(r, g, b) {
     return "rgb(" + r + "," + g + "," + b + ")";
 }
+
+export function fillAndStrokeCircle(x, y, radius) {
+    context.beginPath();
+    context.arc(x, y, radius, 0, Math.PI * 2);
+    context.fill();
+    context.stroke();
+}
