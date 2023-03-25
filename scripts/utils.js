@@ -32,6 +32,18 @@ export function rgb(r, g, b) {
 }
 
 /**
+ * hsla function
+ * @param {*} h value for hue
+ * @param {*} s value for saturation
+ * @param {*} l value for lightness
+ * @param {*} a value for alpha (0.0 fully transparent, 1.0 not transparent)
+ * @returns 
+ */  
+export function hsla(h, s, l, a){
+    return "hsla(" + h + "," + s + "%," + l + "%," + a + ")"; 
+}
+
+/**
  * function to draw and fill a circle
  * @param {*} x x coordinate circle
  * @param {*} y y coordinate circle
