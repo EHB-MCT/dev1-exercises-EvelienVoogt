@@ -12,7 +12,7 @@ function drawCircles() {
         for (let j = 0; j <= total; j++) {
             let x = i * (innerWidth / 10);
             let y = j * (innerHeight / 10);
-            let radius = Math.floor(Math.random() * 60);
+            let radius = 5 * j;
             Utils.fillAndStrokeCircle(x, y, radius);
         }
     }
