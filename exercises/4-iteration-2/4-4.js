@@ -5,14 +5,14 @@ import * as Utils from "../../scripts/utils.js";
 drawCircles();
 
 function drawCircles() {
-    context.fillStyle = Utils.hsla(195, 100, 50, 0.4);
-    context.strokeStyle = Utils.hsla(195, 100, 50, 0.0);
     let total = 10;
     for (let i= 0; i <= total; i++) {
         for (let j = 0; j <= total; j++) {
+            context.fillStyle = Utils.hsla((i % 2) * 200, 100, 50, 0.4);
+            context.strokeStyle = Utils.hsla((i % 2) * 200, 100, 50, 0.0);
             let x = i * (innerWidth / 10);
             let y = j * (innerHeight / 10);
-            let radius = 5 * j;
+            let radius = 35;
             Utils.fillAndStrokeCircle(x, y, radius);
         }
     }
