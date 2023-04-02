@@ -57,6 +57,18 @@ export function fillAndStrokeCircle(x, y, radius) {
 }
 
 /**
+ * function to fill a circle
+ * @param {*} x x coordinate circle
+ * @param {*} y y coordinate circle
+ * @param {*} radius radius circle
+ */
+export function fillCircle(x, y, radius) {
+    context.beginPath();
+    context.arc(x, y, radius, 0, Math.PI * 2);
+    context.fill();
+}
+
+/**
  * draw and stroke Ellipse
  * @param {*} x x coordinate ellipse
  * @param {*} y y coordinate ellipse
