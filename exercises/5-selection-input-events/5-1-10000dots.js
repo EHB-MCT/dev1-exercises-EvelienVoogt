@@ -17,12 +17,12 @@ function drawDots() {
     for (let i = 0; i < 10000; i++) {
         let x = Utils.randomNumber(0, width);
         let y = Utils.randomNumber(0, height);
-        if (y < height / 3) {
+        if (x < width / 4) {
             context.fillStyle = "red";
-        } else if (y < height * (2 / 3 )) {
+        } else if (x < width * (3 / 4 )) {
             context.fillStyle = "white";
         } else {
-            context.fillStyle = "blue";
+            context.fillStyle = "yellow";
         }
         Utils.fillCircle(x, y, 2);
     }
