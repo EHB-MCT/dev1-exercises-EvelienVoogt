@@ -81,3 +81,23 @@ export function fillAndStrokeEllipse(x, y, rX, rY) {
     context.fill();
     context.stroke();
 }
+
+/**
+ * calculate random number between min and max
+ * @param {*} min minimum value
+ * @param {*} max maximum value
+ */
+export function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+/**
+ * calculates the distance between 2 coordinates
+ * @param {*} x1 x coordinate of first point
+ * @param {*} y1 y coordinate of first point
+ * @param {*} x2 x coordinate of second point
+ * @param {*} y2 y coordinate of second point
+ */
+export function calculateDistance(x1, y1, x2, y2) {
+    return Math.hypot(x2 - x1, y2 - y1);
+}
