@@ -17,10 +17,11 @@ function drawDots() {
     for (let i = 0; i < 10000; i++) {
         let x = Utils.randomNumber(0, width);
         let y = Utils.randomNumber(0, height);
-        if (x > width / 4 && x < width * 3 / 4 && y > height / 4 && y < height * 3 / 4) {
-            context.fillStyle = "white";
+        let distance = Utils.calculateDistance(x, y, width / 2, height / 2);
+        if (distance < 300) {
+            context.fillStyle = "red";
         } else {
-            context.fillStyle = "blue";
+            context.fillStyle = "white";
         }
         Utils.fillCircle(x, y, 2);
     }
