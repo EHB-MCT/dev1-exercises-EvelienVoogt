@@ -5,7 +5,7 @@ import * as Utils from "../../scripts/utils.js";
 let width = context.canvas.width;
 let height = context.canvas.height;
 
-background();
+
 document.getElementById("draw").onclick = drawCards;
 
 function background() {
