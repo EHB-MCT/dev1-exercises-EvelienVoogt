@@ -69,6 +69,19 @@ export function fillCircle(x, y, radius) {
 }
 
 /**
+ * Draws a filled ellipse of which the center is at a x, y
+ * @param {*} x x coordinate of the center of the ellipse
+ * @param {*} y y coordinate of the center of the ellipse 
+ * @param {*} rX horizontal radius of the ellipse (half of the width)
+ * @param {*} rY vertical radius of the ellipse (half of the height)
+ */
+export function fillEllipse(x, y, rX, rY) {
+    context.beginPath();
+    context.ellipse(x, y, rX, rY, 0, 0, Math.PI * 2);
+    context.fill();
+}
+
+/**
  * draw and stroke Ellipse
  * @param {*} x x coordinate ellipse
  * @param {*} y y coordinate ellipse
